@@ -16,6 +16,12 @@
 <body data-spy="scroll" data-target="#main-nav" id="home">
 
 <!-- START HERE -->
+<!-- RETURN TO TOP -->
+<a href="#" id="return-to-top">
+    <i class="fas fa-sort-up fa-2x"></i>
+</a>
+<!-- END RETURN TOP-->
+
 
 <!-- NAVBAR -->
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
@@ -404,7 +410,15 @@
     $('#year').text(new Date().getFullYear());
 
     // Init Scrollspy
-    $('body').scrollspy({targer: '#main-nav'})
+    $('body').scrollspy({targer: '#main-nav'});
+
+    $(window).scroll(() => {
+        if ($(this).scrollTop() >= 400) {
+            $('#return-to-top').fadeIn(200);
+        } else {
+            $('#return-to-top').fadeOut(200);
+        }
+    });
 </script>
 </body>
 </html>
