@@ -1,0 +1,77 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: white;
+}
+
+.navbar {
+    border-bottom: 3px solid #17a2b8;
+    background: rgb(1, 42, 74, 0.85) !important;
+}
+
+.navbar:hover {
+    background: rgb(1, 42, 74) !important;
+}
+
+#home-section {
+    background-size: cover;
+    background: url("../img/home.jpg") no-repeat fixed;
+    min-height: 720px;
+}
+
+#home-section .dark-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 720px;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+#home-section .blue-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 720px;
+    background: rgba(1, 58, 99, 0.1);
+}
+
+#home-section .home-inner {
+    padding-top: 150px;
+}
+
+#home-section .card-form {
+    opacity: 0.8;
+    background: rgb(25, 43, 56) !important
+}
+
+#home-section .card-form:hover {
+    opacity: 1;
+}
+
+#explore-head-section {
+    background: #014f86 !important;
+}
+
+#create-head-section {
+    background: #2a6f97 !important;
+}
+
+#share-head-section {
+    background: #468faf !important;
+}
+
+footer#main-footer {
+     background: rgb(1, 42, 74) !important;
+}
+
+#create-section:hover .scale {
+    transform: scale(1.05);
+}
+
+#share-section:hover .scale {
+    transform: scale(1.05);
+}
