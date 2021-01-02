@@ -65,15 +65,7 @@ body {
 }
 
 footer#main-footer {
-     background: rgb(1, 42, 74) !important;
-}
-
-#create-section:hover .scale {
-    transform: scale(1.05);
-}
-
-#share-section:hover .scale {
-    transform: scale(1.05);
+    background: rgb(1, 42, 74) !important;
 }
 
 #return-to-top {
@@ -96,11 +88,21 @@ footer#main-footer {
     transition: all 0.3s ease;
 }
 
-#return-to-top:hover {
-    background: rgba(0, 0, 0, 0.8);
-}
+@media (hover: hover) and (pointer: fine) {
+    #create-section:hover .scale {
+        transform: scale(1.05);
+    }
 
-#return-to-top:hover i {
-    color: #fff;
-    top: 5px;
+    #share-section:hover .scale {
+        transform: scale(1.05);
+    }
+
+    #return-to-top:hover {
+        background: rgba(0, 0, 0, 0.8);
+    }
+
+    #return-to-top:hover i {
+        color: #fff;
+        top: 5px;
+    }
 }
